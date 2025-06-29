@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Match</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="image/Film.gif" alt="">
+    </div>
+
+    <div class="navbar">
+        <div class="logo">
+            <div onclick="direct()" class="logo1">
+                <img src="image/logo.png" alt="" srcset="">
+                <h1>Movie Match</h1>
+            </div>
+            <div>
+                <i id="icon1" class="fa-solid fa-bars" onclick="fun1()"></i>
+                <i id="icon2" class="fa-solid fa-xmark" onclick="fun2()"></i>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul id="nav1">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="ask.html">Ask Us</a></li>
+                <li><button onclick="dark()"><i class="fa-solid fa-lightbulb"></i></button></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="find" class="search">
+        <div class="s1">
+            <div class="iinp">
+                <input id="movie" oninput="funcut()" type="text" placeholder="Search...">
+                <button class="x" onclick="empty()">X</button>
+            </div>
+            <button id="sb" onclick="list()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="s2">
+            <!-- <div class="box">
+                <div class="img">
+                    <img src="image/box.avif" alt="" srcset="">
+                </div>
+
+                <div class="boxpara">
+                    <h2>THOR RAGNOROK</h2>
+                    <p>Thor must battle the Hulk in a gladiatorial duel and save his home world from the all-powerful Hela.</p>
+                    <p>Genre: "Action"</p>
+                    <p>Year: 2017</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+    <script>
+        let pre = document.querySelector(".preloader");
+
+        async function funpre(){
+            setTimeout(() => {
+                pre.style.display = "none"
+            },2600);
+        }
+
+        funpre()
+    </script>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

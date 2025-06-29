@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Match</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="image/Film.gif" alt="">
+    </div>
+
+    <div class="navbar">
+        <div class="logo">
+            <div onclick="direct()" class="logo1">
+                <img src="image/logo.png" alt="" srcset="">
+                <h1>Movie Match</h1>
+            </div>
+            <div>
+                <i id="icon1" class="fa-solid fa-bars" onclick="fun1()"></i>
+                <i id="icon2" class="fa-solid fa-xmark" onclick="fun2()"></i>
+            </div>
+        </div>
+
+        <div class="nav">
+            <ul id="nav1">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="ask.html">Ask Us</a></li>
+                <li><button onclick="dark()"><i class="fa-solid fa-lightbulb"></i></button></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="ask">
+        <div class="what">
+            <h1>What's Your Mood Today?</h1>
+            <div class="wbutton">
+                <button onclick="funhappy()"><i class="fa fa-smile-o" aria-hidden="true"></i></button>
+                <button onclick="funmedium()"><i class="fa fa-meh-o" aria-hidden="true"></i></button>
+                <button onclick="funsad()"><i class="fa fa-frown-o" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+        <div class="s2"></div>
+
+        <div class="vote">
+            <h2>Let's see today's winner....</h2>
+            <div class="vv">
+                <p>Action 🎯</p><button onclick="plus1()">Vote</button><p><span id="v1">10</span> votes</p> 
+            </div> 
+            <div class="vv">
+                <p>Romance ❤️</p><button onclick="plus2()">Vote</button><p><span id="v2">10</span> votes</p>  
+            </div>
+            <div class="vv">
+                <p>Comedy 😂</p><button onclick="plus3()">Vote</button><p><span id="v3">10</span> votes</p>
+            </div>
+            <div class="vv">
+                <p>Thriller 🔥</p><button onclick="plus4()">Vote</button><p><span id="v4">10</span> votes</p>
+            </div>
+            <div class="vv">
+                <p>Drama 🎭</p><button onclick="plus5()">Vote</button><p><span id="v5">10</span> votes</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        let pre = document.querySelector(".preloader");
+
+        async function funpre(){
+            setTimeout(() => {
+                pre.style.display = "none"
+            },2600);
+        }
+
+        funpre()
+    </script>
+
+
+    
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

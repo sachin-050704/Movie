@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+}
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 99999;
+}
+
+.preloader img {
+    width: 200px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 10px 50px;
+    border-bottom: 1px solid black;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo1 {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.navbar .logo img {
+    width: 50px;
+}
+
+.navbar h1 {
+    padding: 0 10px;
+}
+
+.navbar i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar #icon2 {
+    display: none;
+}
+
+.navbar .nav {
+    display: flex;
+    justify-content: right;
+}
+
+.navbar .nav ul {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px 15px;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+}
+
+.navbar .nav ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.navbar .nav ul li a {
+    padding: 10px 0px;
+    color: black;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.navbar .nav ul li button {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home img {
+    padding: 50px 0;
+    width: 600px;
+}
+
+.home .homepara {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px;
+}
+
+.home .homepara h1 {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home .homepara p {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home .homepara button a {
+    color: white;
+}
+
+.navtog {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hometog {
+    background-color: black;
+    color: white;
+}
+
+.sertog {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.home button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border: 0;
+    margin-top: 10px;
+}
+
+.home button:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid black;
+    box-shadow: 0 0 1rem red;
+}
+
+.home button:hover a{
+    color: red;
+}
+
+.search {
+    padding: 20px 50px;
+    /* height: 100%; */
+}
+
+.search .s1 {
+    display: flex;
+    justify-content: center
+}
+
+.search .s1 input {
+    width: 300px;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.search .s1 input::placeholder {
+    color: black;
+}
+
+.search .s1 button {
+    padding: 8px 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.s2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.s2 .box {
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 44px;
+}
+
+.s2 .box .img {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.s2 .box .img img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.s2 .box:hover img {
+    transform: scale(1);
+}
+
+.s2 .boxpara {
+    padding: 10px;
+}
+
+.s2 .boxpara h2 {
+    text-align: center;
+}
+
+.search .s1 #movie {
+    position: relative;
+}
+
+.search .s1 .x {
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    font-size: 15px;
+    display: none;
+}
+
+.ask {
+    width: 100%;
+    height: 100vh;
+}
+
+.ask .what {
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ask .what button {
+    background-color: transparent;
+    font-size: 55px;
+    border: 0;
+    outline: 0;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.vote {
+    padding: 20px 60px;
+}
+
+.vv {
+    display: flex;
+    padding: 5px 0;
+}
+
+.vv button {
+    margin: 0 10px;
+    padding: 2px 5px;
+    background-color: red;
+    color: white;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
